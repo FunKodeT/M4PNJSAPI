@@ -41,7 +41,7 @@
 
 ---
 
--   Initialized operations branch (0)
+-   Initialized operations branch (REF: 0 || OPERATIONS)
 -   Initialized local repository (REF: LOCAL)
 -   Initialized remote repository (REF: ORIGIN)
 -   Connected LOCAL to ORIGIN
@@ -177,6 +177,95 @@
         <td>|0.0|</td>
         <td>= [N/A]</td>
         <td>- MC: Operations Branch</td>
+    </tr>
+</table>
+
+<h3 align="center">BRANCH 1</h3>
+
+<h4 align="center">VERSION 1.0</h4>
+
+---
+
+-   Initialized first version branch (REF: 1 || FIRST)
+-   Prepared FIRST for merge into OPERATIONS
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>|1|</td>
+        <td>= [N/A]</td>
+        <td>- MC: First version branch</td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0| => |1.0|</td>
+        <td>= [MAINDIR\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|0| => |1.0|</td>
+        <td>= [MAINDIR\db\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0| => |1.0|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>.env</td>
+        <td>|0| => |1.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|1| => |1.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|0| => |1.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>|1| => |1.0|</td>
+        <td>= [N/A]</td>
+        <td></td>
     </tr>
 </table>
 

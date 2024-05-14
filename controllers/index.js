@@ -1,9 +1,13 @@
 const awesomeFunction = (Req, res) => {
-  res.send("Hello World!");
+	res.send('Hello World!');
 };
 
 const tooeleTech = (Req, res) => {
-  res.send("Tooele Tech is Awesome!");
+	res.send('Tooele Tech is Awesome!');
 };
 
-module.exports = { awesomeFunction, tooeleTech };
+const kodeT = (req, res) => {
+	res.send('Hello there.');
+};
+
+module.exports = {awesomeFunction, tooeleTech, kodeT};
