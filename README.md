@@ -301,4 +301,96 @@
 
 ---
 
+<h3 align="center">BRANCH 2</h3>
+
+<h4 align="center">VERSION 2.0</h4>
+
+---
+
+-   Initialized second version branch (REF: 2 || SECOND)
+-   Commited first project step changes
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>naughtyFiles\</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\naughtyFiles]</td>
+        <td>- MC: Directory contains naughty notes</td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|1.0| => |2.0|</td>
+        <td>= [MAINDIR\db\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.1| => |2.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|1.0| => |2.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|1.0| => |2.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>COPIED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>db\connect.js</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\db\connect.js] => [naughtyFiles\db\connect(v2.0).js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|2.0|</td>
+        <td>= [MAINDIR\server.js] => [naughtyFiles\server(v2.0).js]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---
