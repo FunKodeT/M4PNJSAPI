@@ -238,6 +238,64 @@
 
 ---
 
+<h4 align="center">VERSION 0.3</h4>
+
+---
+
+-   Changed syntax for some properties for personal ease
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|2.1| => |0.3|</td>
+        <td>= [MAINDIR\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|2.1| => |0.3|</td>
+        <td>= [MAINDIR\db\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>package-lock.json</td>
+        <td>|2.1| => |0.3|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>package.json</td>
+        <td>|2.1| => |0.3|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.2| => |0.3|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|2.1| => |3.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+---
+
 <h3 align="center">BRANCH 1</h3>
 
 <h4 align="center">VERSION 1.0</h4>

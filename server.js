@@ -1,13 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const mongodb = require('./db/connect');
+const mongoDB = require('./db/connect');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors()).use('/', require('./routes'));
 
-mongodb.initDb((err) => {
+mongoDB.initDB((err) => {
 	if (err) {
 		console.log(err);
 	} else {
