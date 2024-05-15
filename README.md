@@ -393,4 +393,117 @@
 
 ---
 
+<h4 align="center">VERSION 2.1</h4>
+
+---
+
+-   Completed Project Part 2, changes commited
+-   Prepped SECOND for merge into OPERATIONS
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|1.0| => |2.1|</td>
+        <td>= [MAINDIR\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|2.0| => |2.1|</td>
+        <td>= [MAINDIR\db\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Student.js</td>
+        <td>|0| => |2.1|</td>
+        <td>= [MAINDIR\models\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|1.0| => |2.1|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>.env</td>
+        <td>|1.0| = |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>.gitignore</td>
+        <td>|0.0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>package-lock.json</td>
+        <td>|0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>package.json</td>
+        <td>|0.0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|2.0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|2.0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|2.0| => |2.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>COPIED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>routes\&+</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td>- &+<br>{index(v2.1).js = |2.1|}</td>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|2.1|</td>
+        <td>= [MAINDIR\db\connect.js] => [naughtyFiles\db\connect(v2.1).js]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

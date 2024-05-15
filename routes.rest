@@ -6,3 +6,6 @@ GET http://localhost:3001/ttech/ HTTP/1.1
 
 ### GET FUNKODET ROUTE
 GET http://localhost:3001/kodeT/ HTTP/1.1
+
+### GET STUDENTSALL ROUTE
+GET http://localhost:3001/students/ HTTP/1.1
