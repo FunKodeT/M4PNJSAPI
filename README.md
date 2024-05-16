@@ -622,4 +622,77 @@
 
 ---
 
+<h3 align="center">BRANCH 3</h3>
+
+<h4 align="center">VERSION 3.0</h4>
+
+---
+
+-   Initialized third version branch (REF: 3 || THIRD)
+-   Commited project progress (20240515)
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>students.js</td>
+        <td>|3|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0.3| => |3.0|</td>
+        <td>= [MAINDIR\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|2.1| => |3.0|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>students.js</td>
+        <td>|3| => |3.0|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.3| => |3.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|0.3| = |3.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

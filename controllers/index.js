@@ -1,3 +1,4 @@
+const {mongo} = require('mongoose');
 const mongodb = require('../db/connect');
 const ObjectID = require('mongodb').ObjectID;
 
@@ -21,6 +22,7 @@ const tTechFn = (req, res, next) => {
 	res.json('Tooele Tech is Awesome!');
 };
 
+// GET STUDENTS: ALL
 const getAllStudents = async (req, res) => {
 	try {
 		const result = await mongodb.getDB().db().collection('students').find();
@@ -33,11 +35,59 @@ const getAllStudents = async (req, res) => {
 	}
 };
 
+// GET STUDENTS: ONE
+const getOneStudents = async (req, res) => {
+	try {
+		const userID = new ObjectID(req.params.id);
+		const result = await mongodb
+			.getDB()
+			.db()
+			.collection('students')
+			.find({_id: userID});
+		result.toArray().then((lists) => {
+			res.setHeader('Content-Type', 'application/json');
+			res.status(200).json(lists[0]);
+		});
+	} catch (error) {
+		res.status(500).json(error);
+	}
+};
+
+// POST STUDENTS: NEW
+const newStudents = async (req, res) => {
+	try {
+		const student = {
+			firstName: req.body.firstName,
+			lastName: req.body.lastName,
+			email: req.body.email,
+			age: req.body.age,
+			currentCollege: req.body.currentCollege,
+		};
+		const response = await mongodb
+			.getDB()
+			.db()
+			.collection('students')
+			.insertOne(student);
+		if (response.acknowledged) {
+			res.status(201).json(response);
+		} else {
+			res.status(500).json(
+				response.error ||
+					'Some error occured while creating new student.'
+			);
+		}
+	} catch (error) {
+		res.status(500).json(error);
+	}
+};
+
 module.exports = {
 	awesomeFn,
 	tTech,
 	kodeT,
-	getAllStudents,
 	awesomeNameFn,
 	tTechFn,
+	getAllStudents,
+	getOneStudents,
+	newStudents,
 };
