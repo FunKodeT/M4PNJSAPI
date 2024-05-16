@@ -663,7 +663,7 @@
     </tr>
     <tr>
         <td>index.js</td>
-        <td>|0.3| => |3.0|</td>
+        <td>|0.2.1| => |3.0|</td>
         <td>= [MAINDIR\controllers\]</td>
         <td></td>
     </tr>
@@ -681,13 +681,65 @@
     </tr>
     <tr>
         <td>README.md</td>
-        <td>|0.3| => |3.0|</td>
+        <td>|0.2.2| => |3.0|</td>
         <td>= [MAINDIR\]</td>
         <td></td>
     </tr>
     <tr>
         <td>server.js</td>
-        <td>|0.3| = |3.0|</td>
+        <td>|0.2.2| = |3.0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h4 align="center">VERSION 3.1</h4>
+
+---
+
+-   Completed Project Part 3, changes commited
+-   Prepped THIRD for merge into OPERATIONS
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0.2.1| => |3.1|</td>
+        <td>= [MAINDIR\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|2.1| => |3.1|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>students.js</td>
+        <td>|3.0| => |3.1|</td>
+        <td>= [MAINDIR\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|3.0| => |3.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|2.1| => |3.1|</td>
         <td>= [MAINDIR\]</td>
         <td></td>
     </tr>

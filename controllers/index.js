@@ -1,6 +1,7 @@
 const {mongo} = require('mongoose');
 const mongodb = require('../db/connect');
-const ObjectID = require('mongodb').ObjectID;
+// const ObjectID = require('mongodb').ObjectId;
+const ObjectId = require('mongodb').ObjectId;
 
 const awesomeFn = (req, res, next) => {
 	res.send('Hello World!');
@@ -38,12 +39,16 @@ const getAllStudents = async (req, res) => {
 // GET STUDENTS: ONE
 const getOneStudents = async (req, res) => {
 	try {
-		const userID = new ObjectID(req.params.id);
+		const userID = new ObjectId(req.params.id);
+		// const userID = static createFromTime(req.params.id)
+		// const userID = new inputId(req.params.id);
+		console.log(userID);
 		const result = await mongodb
 			.getDB()
 			.db()
 			.collection('students')
 			.find({_id: userID});
+		console.log(result);
 		result.toArray().then((lists) => {
 			res.setHeader('Content-Type', 'application/json');
 			res.status(200).json(lists[0]);
@@ -81,6 +86,59 @@ const newStudents = async (req, res) => {
 	}
 };
 
+// PATCH STUDENTS: ONE
+const updateStudents = async (req, res) => {
+	try {
+		const userID = new ObjectId(req.params.id);
+		// const userID = new inputId(req.params.id);
+		const student = {
+			firstName: req.body.firstName,
+			lastName: req.body.lastName,
+			email: req.body.email,
+			age: req.body.age,
+			currentCollege: req.body.currentCollege,
+		};
+		const response = await mongodb
+			.getDB()
+			.db()
+			.collection('students')
+			.replaceOne({_id: userID}, student);
+		if (response.acknowledged) {
+			res.status(204).json(response);
+		} else {
+			res.status(500).json(
+				response.error ||
+					'Some error occurred while updating the student'
+			);
+		}
+	} catch (error) {
+		res.status(500).json(error);
+	}
+};
+
+// DELETE STUDENTS: ONE
+const deleteStudents = async (req, res) => {
+	try {
+		const userID = new ObjectId(req.params.id);
+		// const userID = new inputId(req.params.id);
+		const response = await mongodb
+			.getDB()
+			.db()
+			.collection('students')
+			.deleteOne({_id: userID}, true);
+		console.log(response);
+		if (response.acknowledged) {
+			res.status(200).send(response);
+		} else {
+			res.status(500).json(
+				response.error ||
+					'Some error occurred while deleting this student.'
+			);
+		}
+	} catch (error) {
+		res.status(500).json(error);
+	}
+};
 module.exports = {
 	awesomeFn,
 	tTech,
@@ -90,4 +148,6 @@ module.exports = {
 	getAllStudents,
 	getOneStudents,
 	newStudents,
+	updateStudents,
+	deleteStudents,
 };

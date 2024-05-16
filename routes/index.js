@@ -1,5 +1,5 @@
-const myController = require('../controllers');
 const routes = require('express').Router();
+const myController = require('../controllers');
 
 // TESTING ROUTES
 routes.get('/', myController.awesomeFn);
@@ -15,7 +15,7 @@ routes.get('/awesomeNm', myController.awesomeNameFn);
 // STUDENT ROUTES
 
 // ROUTE: ALL STUDENTS (API LIST)
-routes.get('/students', myController.getAllStudents);
+// routes.get('/students', myController.getAllStudents);
 
 // REQUIRE: [routes\students.js]
 routes.use('/students', require('./students'));
